@@ -2,7 +2,7 @@
 
 Moda fit/ suplementação / acessórios
 
-![alt text](imagens/Protótipo 1.0.png)
+![alt text](imagens/Prototipo.png)
 
 Menu
 Carrinho
