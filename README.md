@@ -1,7 +1,7 @@
 # QualiSet
 
 Moda fit/ suplementação / acessórios
-![alt text](/image/Protótipo.png)
+![Protótipo](/imagens/Protótipo 1.0.png)
 
 Menu
 Carrinho
