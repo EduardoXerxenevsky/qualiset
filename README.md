@@ -2,7 +2,7 @@
 
 Moda fit/ suplementação / acessórios
 
-![alt text](imagens/Prototipo.png)
+![alt text](imagens/1.png)
 
 
 Prototipo Mer:
