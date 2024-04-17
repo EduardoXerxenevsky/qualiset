@@ -2,7 +2,7 @@
 
 Moda fit/ suplementação / acessórios
 
-![alt text](imagens/1.png)
+![alt text](imagens/01.png)
 
 
 Prototipo Mer:
@@ -29,22 +29,26 @@ cadastrado, cupom de 15% de desconto fixo).
 
 ![alt text](imagens/Logo.png)
 
-![alt text](imagens/1.png)
+![alt text](imagens/01.png)
 
-![alt text](imagens/2.png)
+![alt text](imagens/02.png)
 
-![alt text](imagens/3.png)
+![alt text](imagens/03.png)
 
-![alt text](imagens/4.png)
+![alt text](imagens/04.png)
 
-![alt text](imagens/5.png)
+![alt text](imagens/05.png)
 
-![alt text](imagens/6.png)
+![alt text](imagens/06.png)
 
-![alt text](imagens/7.png)
+![alt text](imagens/07.png)
 
-![alt text](imagens/8.png)
+![alt text](imagens/08.png)
 
-![alt text](imagens/9.png)
+![alt text](imagens/09.png)
 
 ![alt text](imagens/10.png)
+
+![alt text](imagens/11.png)
+
+![alt text](imagens/12.png)
