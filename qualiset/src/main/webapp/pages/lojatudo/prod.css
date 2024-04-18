@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    border: none;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif; 
+}
+html {
+    width: 100vw;
+    height: 100vh;
+    font-size: 62.5%; 
+    overflow-x: hidden;
+}
+
+/*Menu */
+
+.content {
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0c4246;
+
+    padding-left: 30rem;
+}
+
+/* Logo */
+
+.content .logo img {
+    width: 400px; 
+    height: auto; 
+    cursor: pointer;
+    margin-left: -30rem;
+}
+.content .lista-menu {
+    width: 950px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.content .lista-menu li a {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    color: rgb(1, 108, 116);
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: all 200ms ease-in;
+}
+.content .lista-menu li a:hover {
+    background-color: #3333;
+    border-bottom: 4px solid #ffc506;
+    color: #ffc506;
+}
+/* descrição */
+
+
+.desc {
+    height: 7vh;
+    width: 100vw;
+    color: rgb(24, 22, 22);
+    background-color: #01746e; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+}
+
+
+
+
+/* produtos */
+
+.itensproduto {
+    width: 100vw;
+
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+   
+}
+.itensproduto .produto {
+    width: calc(250px - 1px); 
+    height: auto;
+    padding: 10px;
+    border: 2px solid #5f5c5c; 
+    border-radius: 10px;
+    box-sizing: border-box;
+    text-align: center; 
+}
+
+
+
+   
+
+.itensproduto .info {
+    color: #1d7042;
+}
+.itensproduto .info h1{
+font-size: 400%;
+}
+.itensproduto .info h2{
+    font-size: 150%;
+    font-style:oblique;
+    }
+.itensproduto img {
+    width: 150px;
+    height: 175px;
+    border-radius: 15px;
+
+}
+
+
+.itensproduto .info h4 span {
+    font-size:  1.6rem;
+    color: #585858;
+    margin-left: 1.5rem;
+    text-decoration: underline;
+}
+
+.itensproduto .info .pedir {
+    width: 200px;
+    height: 35px;
+
+    margin-top: 0.5rem;
+    background-color: #ffc506;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: black;
+    transition: all 200ms ease-in;
+}
+.itensproduto .info .pedir:hover {
+    background-color: #5e5252;
+    color: white;
+}
+
+/* menu vertical  */
+
+.menuvertical {
+    width: 200px; 
+    font-size: 1.7rem;
+    padding-top: 20px; 
+    color: rgb(97, 94, 94); 
+}
+
+.menuvertical a {
+    display: flex; 
+    padding: 10px 20px; 
+    color: rgb(97, 94, 94); 
+    text-decoration: none; 
+}
+
+.menuvertical a:hover {
+    color: #000000;
+}
+ 
+
+
