@@ -1,0 +1,29 @@
+.login-button,
+.cadastro-button {
+    width: 120px;
+    height: 50px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 50px;
+    background-color: #01746e; 
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover,
+.cadastro-button:hover {
+    background-color: #0c4246;
+}
+
+.input-box {
+    width: 200px;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}

@@ -85,17 +85,19 @@ html {
     padding-right: 15%;
     display: flex;
     align-items: center;
-    justify-content:space-between;
-   
+    justify-content: space-between;
+    flex-wrap: wrap; /* Adiciona esta linha para permitir que os itens se quebrem em várias linhas */
 }
+
 .itensproduto .produto {
-    width: calc(250px - 1px); 
+    width: calc(25% - 20px); /* Define a largura para acomodar quatro itens por linha */
     height: auto;
     padding: 10px;
-    border: 2px solid #5f5c5c; 
+    margin-bottom: 20px; /* Adiciona espaço entre as linhas */
+    border: 2px solid #5f5c5c;
     border-radius: 10px;
     box-sizing: border-box;
-    text-align: center; 
+    text-align: center;
 }
 
 
