@@ -80,17 +80,16 @@ html {
 /* produtos */
 
 .itensproduto {
-    width: 100vw;
+    width: calc(100vw - 240px); /* Ajuste para levar em conta a largura do menu vertical */
     padding-top: 2%;
-    padding-right: 15%;
+    padding-right: 15px; /* Pequeno espaço entre a borda direita e os produtos */
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
-    flex-wrap: wrap; /* Adiciona esta linha para permitir que os itens se quebrem em várias linhas */
 }
 
 .itensproduto .produto {
-    width: calc(25% - 20px); /* Define a largura para acomodar quatro itens por linha */
+    width: calc(25% - 20px); /* Reduz a largura dos itens de produto */
     height: auto;
     padding: 10px;
     margin-bottom: 20px; /* Adiciona espaço entre as linhas */
@@ -100,6 +99,12 @@ html {
     text-align: center;
 }
 
+.itensproduto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 10px; /* Adiciona espaço entre as imagens */
+}
 
 
    
@@ -114,13 +119,6 @@ font-size: 400%;
     font-size: 150%;
     font-style:oblique;
     }
-.itensproduto img {
-    width: 150px;
-    height: 175px;
-    border-radius: 15px;
-
-}
-
 
 .itensproduto .info h4 span {
     font-size:  1.6rem;
