@@ -74,64 +74,53 @@ html {
     text-align:center;
 }
 
-
-
-
 /* produtos */
-
 .itensproduto {
-    width: calc(100vw - 240px); /* Ajuste para levar em conta a largura do menu vertical */
+    width: calc(100% - 250px); 
     padding-top: 2%;
-    padding-right: 15px; /* Pequeno espaço entre a borda direita e os produtos */
+    padding-left: 200px; 
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    align-items: flex-start; 
+    justify-content: flex-start; 
+    flex-wrap: wrap; 
+    gap: 20px; 
 }
 
 .itensproduto .produto {
-    width: calc(25% - 20px); /* Reduz a largura dos itens de produto */
-    height: auto;
+    width: calc(25% - 20px); 
+    height: 300px; 
     padding: 10px;
-    margin-bottom: 20px; /* Adiciona espaço entre as linhas */
+    margin-bottom: 20px; 
     border: 2px solid #5f5c5c;
     border-radius: 10px;
     box-sizing: border-box;
     text-align: center;
 }
 
-.itensproduto img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 15px;
-    margin-bottom: 10px; /* Adiciona espaço entre as imagens */
-}
-
-
-   
-
 .itensproduto .info {
     color: #1d7042;
 }
-.itensproduto .info h1{
-font-size: 400%;
-}
-.itensproduto .info h2{
-    font-size: 150%;
-    font-style:oblique;
-    }
 
-.itensproduto .info h4 span {
-    font-size:  1.6rem;
-    color: #585858;
-    margin-left: 1.5rem;
-    text-decoration: underline;
+.itensproduto .info h1 {
+    font-size: 24px;
+}
+
+.itensproduto .info h2 {
+    font-size: 18px;
+    font-style: italic;
+}
+
+.itensproduto img {
+    width: 150px;
+    height: 175px;
+    border-radius: 15px;
+
 }
 
 .itensproduto .info .pedir {
-    width: 200px;
+    width: 150px;
     height: 35px;
-
-    margin-top: 0.5rem;
+    margin-top: 10px;
     background-color: #ffc506;
     border-radius: 5px;
     text-transform: uppercase;
@@ -139,19 +128,24 @@ font-size: 400%;
     color: black;
     transition: all 200ms ease-in;
 }
+
 .itensproduto .info .pedir:hover {
     background-color: #5e5252;
     color: white;
 }
 
-/* menu vertical  */
-
+/* menu vertical */
 .menuvertical {
     width: 200px; 
     font-size: 1.7rem;
     padding-top: 20px; 
     color: rgb(97, 94, 94); 
-    padding-right: 20%;
+    padding-right: 20px;
+    position: fixed; 
+    bottom: 100; 
+    left: 0; 
+    background-color: #fff; 
+    overflow-y: auto; 
 }
 
 .menuvertical a {

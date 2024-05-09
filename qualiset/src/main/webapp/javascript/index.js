@@ -95,9 +95,7 @@ autoSlide();
 
 
 const slideImage = () => {
-
     imageIndex = imageIndex === images.length ? 0 : imageIndex < 0 ? images.length - 1 : imageIndex;
-
     carousel.style.transform = `translate(-${imageIndex * 100}%)`;
 };
 
