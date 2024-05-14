@@ -37,16 +37,20 @@
     </section>
 
     <div class="button-container">
-        <div class="login-section">
-            <input type="text" class="input-box" placeholder="Email (Login)">
-            <input type="password" class="input-box" placeholder="Senha (Login)">
-            <button class="login-button">Login</button>
-        </div>
-        <div class="cadastro-section">
-            <input type="text" class="input-box" placeholder="Email (Cadastro)">
-            <input type="password" class="input-box" placeholder="Senha (Cadastro)">
-            <button class="cadastro-button">Cadastro</button>
-        </div>
+        <form action='/login' method="post" class="login-section">
+            <label>Username:</label><br>
+            <input type="text" class="input-box" placeholder="Username (Login)" name="usernam" id="usernam">
+            <label>Password:</label><br>
+            <input type="password" class="input-box" name="passwor" id="passwor" placeholder="Senha (Login)">
+            <input  type='submit' value='Login' class="login-button">
+        </form>
+        <form action="/cadastro" method='post' class="cadastro-section">
+            <label>Username:</label><br>
+            <input type="text" class="input-box" name="username" id="username" placeholder="Username (Cadastro)">
+            <label>Password:</label><br>
+            <input type="password" class="input-box" name="password" id="password" placeholder="Senha (Cadastro)">
+            <input  type='submit' value='Cadastrar' class="login-button">
+        </form>
     </div>
 
     <button class="chatbot-toggler">
