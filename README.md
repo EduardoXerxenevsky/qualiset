@@ -9,10 +9,10 @@ Prototipo Mer:
 
 ![alt text](diagrama/Diagrama.PNG)
 
-Suporte - bot
-Feedback
+Suporte - bot ✅
+Feedback 
 Afiliado - cadastro de cupom
-Login - apenas funcionarios
+Login - apenas funcionarios ✅
 Compra
 
 
