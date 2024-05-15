@@ -5,32 +5,59 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="339cb386-7e8a-4b32-b564-501ab0e4443c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/qualiset.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/qualiset/dao/ProductDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/qualiset/dao/UserDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/qualiset/filter/AuthenticationFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/qualiset/model/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/qualiset/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/qualiset/servlet/CadastroServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/qualiset/servlet/CreateProductServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/qualiset/servlet/DeleteProductServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/qualiset/servlet/ListProductServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/qualiset/servlet/LoginServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/qualiset/servlet/config/ConnectionPoolConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/criarproduto.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/tabela.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/qualiset/dao/AffiliateDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/qualiset/model/Affiliate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/qualiset/model/Cart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/qualiset/model/CartItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/qualiset/servlet/AddFeedbackServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/qualiset/servlet/AddToCartServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/qualiset/servlet/ApplyCouponServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/qualiset/servlet/ProcessAffiliateServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/qualiset/servlet/ProcessCheckoutServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/qualiset/servlet/RemoveCouponServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/qualiset/servlet/RemoveFromCartServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/qualiset/servlet/ViewCartServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/confirmacao-afiliado.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/confirmation.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/loja.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/produtos.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/rejeicao-afiliado.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/qualiset/dao/ProductDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/qualiset/dao/ProductDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/qualiset/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/qualiset/dao/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/qualiset/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/qualiset/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/qualiset/servlet/CadastroServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/qualiset/servlet/CadastroServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/qualiset/servlet/CreateProductServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/qualiset/servlet/CreateProductServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/qualiset/servlet/DeleteProductServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/qualiset/servlet/DeleteProductServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/qualiset/servlet/ListProductServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/qualiset/servlet/ListProductServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/qualiset/servlet/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/qualiset/servlet/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/qualiset/servlet/config/ConnectionPoolConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/qualiset/servlet/config/ConnectionPoolConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/afiliado.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/checkout.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/contato.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/loja.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/loja.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/produto.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/produto.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/tabela.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/javascript/afiliado.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/javascript/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/javascript/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/afiliado.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/afiliado.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/cart.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/contato.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/checkout.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/criarproduto.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/criarproduto.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/imagens/cinturao de força.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/imagens/halter.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/imagens/pneu de caminhão.webp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/produto.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/tabela.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/lojaequipamentos.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/lojaroupas.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/lojasacessorios.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/lojasuplementos.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/lojatudo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/tabela.jsp" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +75,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;EduardoXerxenevsky&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/EduardoXerxenevsky/qualiset.git&quot;,
+    &quot;accountId&quot;: &quot;2f4beaf1-d86e-48fd-b42c-cbdef75c917b&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -64,6 +103,7 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "Maven.carstore [org.apache.tomcat.maven:tomcat7-maven-plugin:2.1:run].executor": "Run",
+    "Maven.quali-set [org.apache.tomcat.maven:tomcat7-maven-plugin:2.1:deploy].executor": "Run",
     "Maven.quali-set [org.apache.tomcat.maven:tomcat7-maven-plugin:2.1:run].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",

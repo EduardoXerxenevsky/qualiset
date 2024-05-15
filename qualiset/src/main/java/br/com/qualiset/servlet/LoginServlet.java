@@ -36,7 +36,7 @@ public class LoginServlet extends HttpServlet {
         System.out.println("logado");
             req.getSession().setAttribute("loggedUser", username);
 
-            resp.sendRedirect("find-all-products");
+            resp.sendRedirect("create-products");
 
         } else {
 

@@ -18,7 +18,7 @@ public class DeleteProductServlet extends HttpServlet {
 
         new ProductDao().deleteProductById(productId);
 
-        resp.sendRedirect("/find-all-products");
+        resp.sendRedirect("/create-products");
 
     }
 

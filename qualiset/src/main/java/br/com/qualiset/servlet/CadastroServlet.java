@@ -16,11 +16,11 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/cadastro")
 public class CadastroServlet extends HttpServlet {
 
-    private UserDAO userDAO; // Adicionamos uma instância do UserDAO
+    private UserDAO userDAO;
 
     @Override
     public void init() throws ServletException {
-        // Inicializamos o UserDAO aqui
+
         userDAO = new UserDAO();
     }
 
@@ -30,16 +30,11 @@ public class CadastroServlet extends HttpServlet {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
 
-        // Criamos um objeto User com os dados recebidos
         User user = new User(username, password);
-
-        // Chamamos o método do DAO para salvar o usuário no banco de dados
 
             userDAO.cadastro(user);
             System.out.println("Usuário salvo com sucesso!");
 
-
-        // Redirecionamos para a página de tabela
         request.getRequestDispatcher("pages/login.html").forward(request, response);
 
     }

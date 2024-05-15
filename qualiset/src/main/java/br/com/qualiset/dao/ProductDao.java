@@ -1,19 +1,38 @@
 package br.com.qualiset.dao;
-import br.com.qualiset.config.ConnectionPoolConfig;
+import br.com.qualiset.servlet.config.ConnectionPoolConfig;
 import br.com.qualiset.model.Product;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
+
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
 public class ProductDao {
 
+    public Product getProductById(String productId) {
+        Product product = null;
+        String sql = "SELECT * FROM PRODUCT WHERE ID = ?";
+        try (Connection conn = ConnectionPoolConfig.getConnection();
+             PreparedStatement stmt = conn.prepareStatement(sql)) {
+            stmt.setString(1, productId);
+            ResultSet rs = stmt.executeQuery();
+            if (rs.next()) {
+                product = new Product(
+                        rs.getString("ID"),
+                        rs.getString("NAME"),
+                        rs.getDouble("PRICE"),
+                        rs.getString("IMAGEM")
+                );
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return product;
+    }
+
     public void createProduct(Product product) {
 
-        String SQL = "INSERT INTO PRODUCT (NAME, PRICE) VALUES (?,?)";
+        String SQL = "INSERT INTO PRODUCT (NAME, PRICE, IMAGEM) VALUES (?,?,?)";
 
         try {
 
@@ -23,6 +42,7 @@ public class ProductDao {
 
             preparedStatement.setString(1, product.getName());
             preparedStatement.setDouble(2, product.getPrice());
+            preparedStatement.setString(3, product.getImagem());
             preparedStatement.execute();
 
             System.out.println("success in insert Product");
@@ -32,6 +52,7 @@ public class ProductDao {
         } catch (Exception e) {
 
             System.out.println("fail in database connection");
+            System.out.println("Error: " + e.getMessage());
 
         }
 
@@ -56,8 +77,9 @@ public class ProductDao {
                 String productId = resultSet.getString("id");
                 String productName = resultSet.getString("name");
                 double productPrice = resultSet.getDouble("price");
+                String image = resultSet.getString("imagem");
 
-                Product product = new Product(productId, productName, productPrice);
+                Product product = new Product(productId, productName, productPrice, image);
 
                 products.add(product);
 
@@ -72,6 +94,7 @@ public class ProductDao {
         } catch (Exception e) {
 
             System.out.println("fail in database connection");
+            System.out.println("Error: " + e.getMessage());
 
             return Collections.emptyList();
 
@@ -97,13 +120,14 @@ public class ProductDao {
         } catch (Exception e) {
 
             System.out.println("fail in database connection");
+            System.out.println("Error: " + e.getMessage());
 
         }
 
     }
     public void updateProduct(Product product) {
 
-        String SQL = "UPDATE PRODUCT SET NAME = ?, PRICE = ? WHERE ID = ?";
+        String SQL = "UPDATE PRODUCT SET NAME = ?, PRICE = ?, IAMGEM WHERE ID = ?";
 
         try {
 
@@ -111,9 +135,10 @@ public class ProductDao {
 
             PreparedStatement preparedStatement = connection.prepareStatement(SQL);
 
-            preparedStatement.setString(1, product.getName()); // Substitua novoNome pelo novo nome do produto
-            preparedStatement.setDouble(2, product.getPrice()); // Substitua novoPreco pelo novo preço do produto
+            preparedStatement.setString(1, product.getName());
+            preparedStatement.setDouble(2, product.getPrice());
             preparedStatement.setString(3, product.getId());
+            preparedStatement.setString(4, product.getImagem());
             preparedStatement.execute();
 
             System.out.println("success in update product");

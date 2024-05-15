@@ -1,7 +1,7 @@
 package br.com.qualiset.dao;
 
 import br.com.qualiset.model.User;
-import br.com.qualiset.config.ConnectionPoolConfig;
+import br.com.qualiset.servlet.config.ConnectionPoolConfig;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

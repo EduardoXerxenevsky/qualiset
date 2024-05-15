@@ -32,7 +32,10 @@ const generateResponse = (chatElement) => {
         messageElement.textContent = "Temos a melhor proteína do mercado.";
     }else if (userMessage == "Por onde posso falar com um representante?") {
         messageElement.textContent = "Pelo Whatsapp: (11) 92388-4241";
-    }else{
+    }else if (userMessage == "teste") {
+             messageElement.textContent = "testado";
+         }
+    else{
         messageElement.classList.add("error");
         messageElement.textContent = "Hmm... Desculpe, não aprendi o que é isso ainda.";
     }

@@ -22,7 +22,7 @@
                 <th>Actions</th>
             </c:if>
         </tr>
-        <c:forEach var="products" items="${products}">
+        <c:forEach var="products" items="${productList}">
             <tr>
                 <td>${products.id}</td>
                 <td>${products.name}</td>
@@ -34,12 +34,14 @@
                             <button type="submit">Delete</button>
                             <span> | </span>
                             <a href="pages/criarproduto.jsp?id=${products.id}&name=${products.name}&price=${products.price}">Update</a>
+                            <img src="${products.imagem}">
                         </form>
                     </c:if>
                 </td>
             </tr>
         </c:forEach>
     </table>
+
   </div>
   <div>
   <br><br>

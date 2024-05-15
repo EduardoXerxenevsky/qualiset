@@ -21,7 +21,7 @@ public class ListProductServlet extends HttpServlet {
 
         req.setAttribute("products", products);
 
-        req.getRequestDispatcher("pages/tabela.jsp").forward(req, resp);
+        req.getRequestDispatcher("pages/loja.jsp").forward(req, resp);
 
     }
 
