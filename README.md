@@ -6,15 +6,18 @@ Qualiset é um e-commerce especializado em moda, produtos e equipamentos do meio
 
 1. **Chatbot:** Integração de um chatbot para oferecer suporte aos clientes e responder perguntas frequentes sobre produtos, pedidos, etc. ✅
 
-2. **Menu de Feedback:** Possibilidade para os clientes deixarem feedback sobre produtos adquiridos, experiência de compra, entre outros.
+2. **Menu de Feedback:** Possibilidade para os clientes deixarem feedback sobre produtos adquiridos, experiência de compra, entre outros. ✅
+
 
 3. **Cadastro e Login:** Sistema de cadastro e login para clientes acessarem suas contas, visualizarem histórico de pedidos, atualizarem informações pessoais, etc. ✅
 
 4. **CRUD de Produtos:** Funcionalidade para adicionar, visualizar, atualizar e excluir produtos do catálogo. ✅
 
-5. **Cadastro de Cupons de Desconto:** Capacidade para os influenciadores afiliados cadastrarem cupons de desconto exclusivos para seus seguidores.
+5. **Cadastro de Cupons de Desconto:** Capacidade para os influenciadores afiliados cadastrarem cupons de desconto exclusivos para seus seguidores. ✅
 
-6. **Menu de Compras:** Interface para os clientes navegarem pelos produtos, adicionarem itens ao carrinho, finalizarem a compra.
+
+6. **Menu de Compras:** Interface para os clientes navegarem pelos produtos, adicionarem itens ao carrinho, finalizarem a compra. ✅
+
 
 ## Pré-requisitos
 
